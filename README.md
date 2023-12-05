@@ -1,6 +1,6 @@
 # job-posting-duplicate-detection
 
-This project aims to leverage text embeddings and Milvus, a high-performance vector search engine, to detect duplicate job postings. The process involves generating embeddings from job descriptions and utilizing Milvus for efficient duplicate detection.
+A project aiming to leverage text embeddings and Milvus, a high-performance vector search engine, to detect duplicate job postings. The process involves generating embeddings from job descriptions and utilizing Milvus for efficient duplicate detection.
 
 
 
