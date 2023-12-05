@@ -42,8 +42,7 @@ The project focuses on the following key tasks:
 |-- milvus/
 |   |-- milvus_setup.py
 |   |-- duplicate_detection.py
-|-- docker/
-|   |-- Dockerfile
+|-- Dockerfile
 |-- docker-compose.yml
 |-- video_demo/
 |   |-- demo_video.mp4
