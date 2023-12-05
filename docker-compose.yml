@@ -1,0 +1,20 @@
+version: '3'
+services:
+  milvus:
+    image: milvusdb/milvus:latest
+    ports:
+      - "19530:19530"
+      - "19121:19121"
+    environment:
+      - MILVUS_ADVERTISED_ADDRESS=milvus
+      - MILVUS_PORT=19530
+      - MILVUS_HTTP_PORT=19121
+
+  job_posting_duplicate_detection:
+    build: .
+    depends_on:
+      - milvus
+    volumes:
+      - ./data:/app/data
+      - ./embeddings:/app/embeddings
+      - ./milvus:/app/milvus
